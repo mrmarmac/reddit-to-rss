@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>Reddit Curated Feed</title>
+    <link>https://reddit.com</link>
+    <description>High-signal posts from selected subreddits.</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 06 Apr 2026 15:47:56 GMT</lastBuildDate>
+  </channel>
+</rss>
