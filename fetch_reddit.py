@@ -15,12 +15,12 @@ import requests
 # ── Configuration ────────────────────────────────────────────────────────────
 
 SUBREDDITS = {
-    "slatestarcodex": 15,
-    "newAIparadigms":  10,
+    "slatestarcodex": 25,
+    "newAIparadigms":  20,
     "narcolepsy":      20,
     "localllama":     200,
     "claudeAI":       200,
-    "bestof":         100,
+    "bestof":         200,
     "auslaw":          20,
     "agentsofai":      50,
     "AI_agents":       50,
