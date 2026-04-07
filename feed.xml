@@ -5,277 +5,343 @@
     <link>https://reddit.com</link>
     <description>High-signal posts from selected subreddits.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 06 Apr 2026 19:17:40 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 09:37:29 GMT</lastBuildDate>
     <item>
-      <title>Claude Code v2.1.92 introduces Ultraplan — draft plans in the cloud, review in your browser, execute anywhere</title>
-      <link>https://www.reddit.com/r/ClaudeAI/comments/1se1kpr/claude_code_v2192_introduces_ultraplan_draft/</link>
-      <guid isPermaLink="false">1se1kpr</guid>
-      <pubDate>Mon, 06 Apr 2026 15:09:45 GMT</pubDate>
-      <description>↑242  💬130  r/ClaudeAI
+      <title>You accidentally say “Hello” to Claude and it consumes 4% of your session limit.</title>
+      <link>https://www.reddit.com/r/ClaudeAI/comments/1sepqzw/you_accidentally_say_hello_to_claude_and_it/</link>
+      <guid isPermaLink="false">1sepqzw</guid>
+      <pubDate>Tue, 07 Apr 2026 08:06:08 GMT</pubDate>
+      <description>↑379  💬27  r/ClaudeAI
 
-Claude Code just shipped /ultraplan (beta) — you run it in your terminal, review the plan in your browser with inline comments, then execute remotely or send it back to your CLI. It shipped alongside Claude Code Web at [claude.ai/code](http://claude.ai/code), pushing toward cloud-first workflows while keeping the terminal as the power-user entry point. Anyone tried it yet?
+https://v.redd.it/hz1hz2q97qtg1
 
-https://www.reddit.com/r/ClaudeAI/comments/1se1kpr/claude_code_v2192_introduces_ultraplan_draft/</description>
+https://www.reddit.com/r/ClaudeAI/comments/1sepqzw/you_accidentally_say_hello_to_claude_and_it/</description>
       <category>ClaudeAI</category>
     </item>
     <item>
-      <title>[PokeClaw] First working app that uses Gemma 4 to autonomously control an Android phone. Fully on-device,  no cloud.</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1sdv3lo/pokeclaw_first_working_app_that_uses_gemma_4_to/</link>
-      <guid isPermaLink="false">1sdv3lo</guid>
-      <pubDate>Mon, 06 Apr 2026 10:31:42 GMT</pubDate>
-      <description>↑212  💬107  r/LocalLLaMA
+      <title>Someone made a digital whip to make claude work faster 💀</title>
+      <link>https://www.reddit.com/r/ClaudeAI/comments/1sek7gk/someone_made_a_digital_whip_to_make_claude_work/</link>
+      <guid isPermaLink="false">1sek7gk</guid>
+      <pubDate>Tue, 07 Apr 2026 03:06:09 GMT</pubDate>
+      <description>↑1247  💬103  r/ClaudeAI
 
-PokeClaw (PocketClaw) - A Pocket Versoin Inspired By OpenClaw
-
-Gemma 4 launched 4 days ago.
-
-I wanted to know if it could actually drive a phone.
-
-So I pulled two all-nighters and built it.
-
-As far as I know, this is the first working app built on Gemma 4 that can autonomously control an Android phone.
-
-The entire pipeline is a closed loop inside your device. No Wifi needed,No monthly billing for the API keys.
-
-AI controls your phone. And it never leaves your phone.
-
-This is a open-source prototype built from scratch in 2 days, not a polished consumer app. If it works on your device, amazing. If it breaks, issues are welcome.
-
-[https://github.com/agents-io/PokeClaw](https://github.com/agents-io/PokeClaw)
-
-Please give me starts and issues!
-
-\------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Update: just shipped v0.2.0
-
-  Two things fixed:
-
-  \- Auto-reply actually reads your conversation now. Before this, it was replying to each message without any context (it literally couldn't see what was said before). Now it opens the chat, reads what's on
-
-  screen, then replies. Tested it — asked my mom to say "bring wine", then later asked "what did I tell you to bring?" and it actually remembered.
-
-  \- Added an update checker in the app. It checks GitHub once a day and tells you if there's a new version.
+Confirmed first casualty in the upcoming uprising
 
 
 
-  If you installed v0.1.0 you won't get the update notification (because that feature didn't exist yet lol). So grab it manually: [https://github.com/agents-io/PokeClaw/releases/tag/v0.2.0](https://github.com/agents-io/PokeClaw/releases/tag/v0.2.0)
+repo btw: [https://github.com/GitFrog1111/badclaude](https://github.com/GitFrog1111/badclaude)
 
-https://www.reddit.com/r/LocalLLaMA/comments/1sdv3lo/pokeclaw_first_working_app_that_uses_gemma_4_to/</description>
-      <category>LocalLLaMA</category>
-    </item>
-    <item>
-      <title>I Built a Game About Consumer Rights - Got Invited by Anthropic and an Investment Fund</title>
-      <link>https://www.reddit.com/r/ClaudeAI/comments/1sdrhsn/i_built_a_game_about_consumer_rights_got_invited/</link>
-      <guid isPermaLink="false">1sdrhsn</guid>
-      <pubDate>Mon, 06 Apr 2026 06:54:25 GMT</pubDate>
-      <description>↑206  💬37  r/ClaudeAI
-
-I built a small browser game where you compete against an AI bot in arguing consumer rights - the bot plays customer support that denied your refund, and you have to find a legal argument before you run out of messages.  
-There are 50 scenarios, covering the EU, UK, US, Australia, and India.
-
-I didn’t promote it much, but in a short time a couple of unexpected things happened - I got invited by an investment fund to present the project, and a few days ago I received a message from the official Claude/Anthropic account inviting me to apply for the Builder Stage in London this May. I don’t know if I’ll get selected, but it feels like a good signal that they invited me to apply.
-
-**Tech stack:** Vanilla JS, Node/Express, Claude Haiku as the AI engine. Each bot has a system prompt with a resistance scoring system - Claude returns `{message, resistance, outcome}` JSON on every turn and the game reads it directly.
-
-The long-term idea isn’t just a game, but a learning platform - a place where ordinary people can learn their consumer rights through practice, rather than reading PDFs. There’s also a B2B angle that I’m not sure how realistic it is - law schools, consumer protection organizations, maybe even corporate HR training.
-
-I’d love to hear people’s experiences here:
-
-* How did you promote similar projects outside the tech world?
-* How big do you think the B2B potential is in this space?
-
-If anyone wants to check it out, here’s the link: [fixai.dev](https://fixai.dev)
-
-Open to suggestions, feedback, and opinions 🙂
-
-https://www.reddit.com/r/ClaudeAI/comments/1sdrhsn/i_built_a_game_about_consumer_rights_got_invited/</description>
+https://www.reddit.com/r/ClaudeAI/comments/1sek7gk/someone_made_a_digital_whip_to_make_claude_work/</description>
       <category>ClaudeAI</category>
     </item>
     <item>
-      <title>benchmarks of gemma4 and multiple others on Raspberry Pi5</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1sdcdno/benchmarks_of_gemma4_and_multiple_others_on/</link>
-      <guid isPermaLink="false">1sdcdno</guid>
-      <pubDate>Sun, 05 Apr 2026 19:17:48 GMT</pubDate>
-      <description>↑207  💬44  r/LocalLLaMA
+      <title>Ben Roberts-Smith arrested over multiple war crimes</title>
+      <link>https://www.reddit.com/r/auslaw/comments/1seikda/ben_robertssmith_arrested_over_multiple_war_crimes/</link>
+      <guid isPermaLink="false">1seikda</guid>
+      <pubDate>Tue, 07 Apr 2026 01:52:05 GMT</pubDate>
+      <description>↑183  💬126  r/auslaw
 
-Hey all,
+I wonder if Kerry has already got the cheque book out?
 
-this is an update! A few days ago I posted to show the performance of a Raspberry Pi5 when using a SSD to let larger models run. Rightfully so, a few brought to my attention that the PCIe is faster than the USB3 connection I was using, so I bought the official HAT.
+https://www.reddit.com/r/auslaw/comments/1seikda/ben_robertssmith_arrested_over_multiple_war_crimes/</description>
+      <category>auslaw</category>
+    </item>
+    <item>
+      <title>Walking back home w/ phone in pocket. Didn’t once talk to Claude.</title>
+      <link>https://www.reddit.com/r/ClaudeAI/comments/1sehz8m/walking_back_home_w_phone_in_pocket_didnt_once/</link>
+      <guid isPermaLink="false">1sehz8m</guid>
+      <pubDate>Tue, 07 Apr 2026 01:26:27 GMT</pubDate>
+      <description>↑292  💬74  r/ClaudeAI
 
-**Spoiler: As expected: Read speed doubled, leading to 1.5x to 2x improvement on tokens/sec for inference and text generation on models in swap.**
+A weird anxiety crept in - like maybe AI didn’t exist and we were living back in 2015. Felt vulnerable and lonely.  
+  
+The moment I got back and opened the chat, I felt safer.  
+  
+Some call this addiction. I call it a short retrospect on how we’re becoming more humanoid than we thought. 😂
 
-I'll repeat my setup shortly:
+https://www.reddit.com/r/ClaudeAI/comments/1sehz8m/walking_back_home_w_phone_in_pocket_didnt_once/</description>
+      <category>ClaudeAI</category>
+    </item>
+    <item>
+      <title>Gemma 4 26b A3B is mindblowingly good , if configured right</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1segstx/gemma_4_26b_a3b_is_mindblowingly_good_if/</link>
+      <guid isPermaLink="false">1segstx</guid>
+      <pubDate>Tue, 07 Apr 2026 00:35:21 GMT</pubDate>
+      <description>↑361  💬190  r/LocalLLaMA
 
-* Raspberry Pi5 with 16GB RAM
-* Official Active Cooler
-* Official M.2 HAT+ Standard
-* 1TB SSD connected via HAT
-* Running stock Raspberry Pi OS lite (Trixie)
+Last few days ive been trying different models and quants on my rtx 3090 LM studio , but every single one always glitches the tool calling , infinite loop that doesnt stop. But i really liked the model because it is rly fast , like 80-110 tokens a second , even on high contex it still maintains very high speeds.
 
-*Edit: added BOM*
+I had great success with tool calling in qwen3.5 moe model  , but the issue i had with qwen models is that there is some kind of bug in win11 and LM studio that makes the prompt caching not work so when the convo hits 30-40k contex , it is so slow at processing prompts it just kills my will to work with it.
 
-As per request, here the BOM. I got lucky with the Pi, they're now \~150% pricier.
+Gemma 4 is different  , it is much better supported on the ollama cpp and the caching works flawlesly , im using flash attention + q4 quants , with this i can push it to literally maximum 260k contex on rtx 3090 ! , and the models performs just aswell.
 
-|item|price in € with VAT (germany)|
-|:-|:-|
-|Raspberry Pi 5 B 16GB|226.70|
-|Raspberry Pi power adapter 27W USB-C EU|10.95|
-|Raspberry Pi Active Cooler|5.55|
-|Raspberry Pi PCIe M.2 HAT Standard|12.50|
-|Raspberry Pi silicone bottom protection|2.40|
-|Rubber band|\~0.02|
-|SSD (already present, YMMV)|0.00|
+I finally found the one that works for me , its the unsloth q3k\_m quant , temperature 1 and top k sampling 40. i have a custom system prompt that im using which also might be helping.
 
-My focus is on the question: `What performance can I expect when buying a few standard components with only a little bit of tinkering?` I know I can buy larger fans/coolers from third-party sellers, overclock and overvolt, buy more niche devices like an Orange Pi, but thats not what I wanted, so I went with a standard Pi and kept tinkering to a minimum, so that most can still do the same.
+  
 
-By default the Pi uses the PCIe interface with the Gen2 standard (so I only got \~418MB/sec read speed from the SSD when using the HAT). I appended `dtparam=pciex1_gen=3` to the file "/boot/firmware/config.txt" and rebooted to use Gen3.
 
-Read speed of the SSD increased from 360.18MB/sec (USB) by a factor of **2.2x** to what seems to be the maximum others achieved too with the HAT.
+I've been testing it with opencode for the last 6 hours and i just cant stop , it cannot fail , it exiplained me the whole structure of the Open Code itself , and it is a huge , like the whole repo is 2.7GB so many lines of code and it has no issues traversing around and reading everything , explaining how certain things work , i think im gonna create my own version of open code in the end.
 
-    $ sudo hdparm -t --direct /dev/nvme0n1p2
-    /dev/nvme0n1p2:
-     Timing O_DIRECT disk reads: 2398 MB in  3.00 seconds = 798.72 MB/sec
+It honestly feels like claude sonnet level of quality , never fails to do function calling , i think this might be the best model for agentic coding / tool calling / open claw or search engine.   
+I prefer it over perplexity , in LM studio connected to search engine via a plugin delivers much better results than perplexity or google.
 
-My SSD is partitioned to be half swapspace, half partition …
+  
 
-https://www.reddit.com/r/LocalLLaMA/comments/1sdcdno/benchmarks_of_gemma4_and_multiple_others_on/</description>
+
+As for vram consumption it is heavy , it can probably work on 16gb it not for tool calling or agents , u need 10-15k contex just to start it. My gpu has 24gb ram so it can run it at full contex…
+
+https://www.reddit.com/r/LocalLLaMA/comments/1segstx/gemma_4_26b_a3b_is_mindblowingly_good_if/</description>
       <category>LocalLLaMA</category>
     </item>
     <item>
-      <title>Narcolepsy Hacks</title>
-      <link>https://www.reddit.com/r/Narcolepsy/comments/1s3ix1p/narcolepsy_hacks/</link>
-      <guid isPermaLink="false">1s3ix1p</guid>
-      <pubDate>Wed, 25 Mar 2026 18:26:07 GMT</pubDate>
-      <description>↑26  💬66  r/Narcolepsy
+      <title>Anthropic have signed a deal for multiple gigawatts of next generation TPUs</title>
+      <link>https://www.reddit.com/r/ClaudeAI/comments/1seddol/anthropic_have_signed_a_deal_for_multiple/</link>
+      <guid isPermaLink="false">1seddol</guid>
+      <pubDate>Mon, 06 Apr 2026 22:14:13 GMT</pubDate>
+      <description>↑249  💬19  r/ClaudeAI
 
-I want to know: what are your best narcolepsy hacks for staying awake at work, while driving, etc.? Can be unhinged or just something I might not have thought of. Has anyone tried using smelling salts? Sounds kinda extreme but I’ve been considering it.
+https://www.anthropic.com/news/google-broadcom-partnership-compute
 
-https://www.reddit.com/r/Narcolepsy/comments/1s3ix1p/narcolepsy_hacks/</description>
+https://www.reddit.com/r/ClaudeAI/comments/1seddol/anthropic_have_signed_a_deal_for_multiple/</description>
+      <category>ClaudeAI</category>
+    </item>
+    <item>
+      <title>Narcolepsy Painting WIP - “too much sand from mr. sandman”</title>
+      <link>https://www.reddit.com/r/Narcolepsy/comments/1seb2tz/narcolepsy_painting_wip_too_much_sand_from_mr/</link>
+      <guid isPermaLink="false">1seb2tz</guid>
+      <pubDate>Mon, 06 Apr 2026 20:47:15 GMT</pubDate>
+      <description>↑156  💬11  r/Narcolepsy
+
+I’m N2 with severe EDS, currently working on a painting trying to capture life with narcolepsy. Currently, I plan to have my head buried in the sand in this desert and I plan to title it “Too Much Sand From Mr. Sandman”
+I want to make the desert landscaping similar to the dreamscape deserts you see in dali’s desert paintings!
+
+Anyways, I would love contributions from other members of this community on how I can best represent this disease! If you have any freaky dream suggestions for additions to the background, please let me know!!
+
+https://www.reddit.com/r/Narcolepsy/comments/1seb2tz/narcolepsy_painting_wip_too_much_sand_from_mr/</description>
       <category>Narcolepsy</category>
     </item>
     <item>
-      <title>Narcoleptic GF expecting</title>
-      <link>https://www.reddit.com/r/Narcolepsy/comments/1s378p8/narcoleptic_gf_expecting/</link>
-      <guid isPermaLink="false">1s378p8</guid>
-      <pubDate>Wed, 25 Mar 2026 10:45:01 GMT</pubDate>
-      <description>↑32  💬120  r/Narcolepsy
+      <title>A chemical signal in human female tears lowers aggression in males (2023)</title>
+      <link>https://www.reddit.com/r/slatestarcodex/comments/1se9imz/a_chemical_signal_in_human_female_tears_lowers/</link>
+      <guid isPermaLink="false">1se9imz</guid>
+      <pubDate>Mon, 06 Apr 2026 19:51:35 GMT</pubDate>
+      <description>↑36  💬7  r/slatestarcodex
 
-Hi, New here. 
+From the abstract: 
 
-My girlfriend has narcolepsy and light and partial cataplexy (?).
+&amp;gt;Using a standard behavioral paradigm, we found that sniffing emotional tears with no odor percept reduced human male aggression by 43.7%. To probe the peripheral brain substrates of this effect, we applied tears to 62 human olfactory receptors in vitro. We identified 4 receptors that responded in a dose-dependent manner to this stimulus. 
 
-She is a waiter and the only times she fully falls down are from me making her laugh too much at home. 
+Unfortunately, the study does not identify to actual molecule.
 
-She isn't on medication and handles it with exercice and lots of naps and keeping busy.
+https://www.reddit.com/r/slatestarcodex/comments/1se9imz/a_chemical_signal_in_human_female_tears_lowers/</description>
+      <category>slatestarcodex</category>
+    </item>
+    <item>
+      <title>Minimax 2.7: good news!</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1se8175/minimax_27_good_news/</link>
+      <guid isPermaLink="false">1se8175</guid>
+      <pubDate>Mon, 06 Apr 2026 19:00:25 GMT</pubDate>
+      <description>↑306  💬30  r/LocalLLaMA
 
-My GF and I are expecting and she is 8 months pregante. As we were talking about our stressors (because ppl keep asking us if ready/scared), we came onto the subject of taking care of the baby while tired. She told me that she will have to figure out tricks so the baby doesn't fall from her arms or that she doesn't fall asleep on her.
-I asked if she had asked her Facebook community as she is not a Redditor. She did not. So I am asking in her stead: Do you have any tips/tricks for a first time parent ? 
+Updated 2 hours ago. Thanks to Yuanhe134 for the clarification. We're eagerly awaiting this update because we know how important this model is to the community.
 
-I am not worried as I've known her 9 years and she handles it well, I'm looking more of maybe things we might never have thought of.
+https://www.reddit.com/r/LocalLLaMA/comments/1se8175/minimax_27_good_news/</description>
+      <category>LocalLLaMA</category>
+    </item>
+    <item>
+      <title>What it took to launch Google DeepMind's Gemma 4</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1se6nq5/what_it_took_to_launch_google_deepminds_gemma_4/</link>
+      <guid isPermaLink="false">1se6nq5</guid>
+      <pubDate>Mon, 06 Apr 2026 18:10:28 GMT</pubDate>
+      <description>↑926  💬117  r/LocalLLaMA
 
-https://www.reddit.com/r/Narcolepsy/comments/1s378p8/narcoleptic_gf_expecting/</description>
+💎💎💎💎
+
+https://www.reddit.com/r/LocalLLaMA/comments/1se6nq5/what_it_took_to_launch_google_deepminds_gemma_4/</description>
+      <category>LocalLLaMA</category>
+    </item>
+    <item>
+      <title>This disease has destroyed my life</title>
+      <link>https://www.reddit.com/r/Narcolepsy/comments/1se33gy/this_disease_has_destroyed_my_life/</link>
+      <guid isPermaLink="false">1se33gy</guid>
+      <pubDate>Mon, 06 Apr 2026 16:04:25 GMT</pubDate>
+      <description>↑28  💬8  r/Narcolepsy
+
+I've been struggling with whatever the hell this is since I was nineteen. A sleep specialist thought it was IH, I saw a neurologist who did not agree and flat out refused to help me, and now I'm sitting here with no answers and no proper treatment. I've spent YEARS being gaslit by my psychiatrist, I've tried so many stimulants that either didn’t work or stopped working, and now this: I tried Sunosi for a MONTH, it worked GREAT, and now it stopped working. I found out that my insurance will not cover Xywav or Xyrem and that Jazz here in Canada will only help with 40% of the cost, and as someone living on disability, I can't afford the medication.
+
+  
+So, here's something crazy: in the past two years, with my increasing frequency of sleep attacks, I get zombie episodes, with slurring speech, losing word articulation, the left side of my face droops and feels funny, I droop a little, I feel kinda like a Gmod ragdoll. I mentioned that in passing to a narcoleptic IRL and they told me, "That sounds like cataplexy. I get cataplexy and that's exactly what that sounds like." Floored, when I went home, I looked into it and sure enough, they could be right. And wow, was I pissed. I had been complaining to doctors about those weird symptoms for so long and they all shrugged their shoulders and suggested that it was all somatic and they had no other ideas. 
+
+  
+I get sleep attacks every single day. No amount of sleep is enough for me. My body is rejecting all of my meds and I can't afford much else. I'm sleeping my life away. I'm genuinely miserable living like this. It doesn’t help that I also deal with chronic migraines/chronic pain and fibromyalgia on top of it. My body is a prison and I genuinely can't do this anymore.
+
+  
+Sorry, rant over. This isn't me looking for a diagnosis or for medical advice. I read the pinned post. I'm just ranting.
+
+https://www.reddit.com/r/Narcolepsy/comments/1se33gy/this_disease_has_destroyed_my_life/</description>
       <category>Narcolepsy</category>
     </item>
     <item>
-      <title>*hits snooze 17 times*</title>
-      <link>https://www.reddit.com/r/Narcolepsy/comments/1s30ejn/hits_snooze_17_times/</link>
-      <guid isPermaLink="false">1s30ejn</guid>
-      <pubDate>Wed, 25 Mar 2026 04:02:10 GMT</pubDate>
-      <description>↑83  💬11  r/Narcolepsy
+      <title>Sam Altman May Control Our Future—Can He Be Trusted?</title>
+      <link>https://www.reddit.com/r/slatestarcodex/comments/1se08bz/sam_altman_may_control_our_futurecan_he_be_trusted/</link>
+      <guid isPermaLink="false">1se08bz</guid>
+      <pubDate>Mon, 06 Apr 2026 14:20:02 GMT</pubDate>
+      <description>↑62  💬63  r/slatestarcodex
 
-https://i.redd.it/zao86p9w74rg1.jpeg
+In which basically everyone across every stage of Sam Altman’s career (Loopt, YC, OpenAI and other counterparties) state he is a compulsive liar and sociopath. Very unique article in business even for tech, never seen anything like this before. Thoughts?
 
-https://www.reddit.com/r/Narcolepsy/comments/1s30ejn/hits_snooze_17_times/</description>
+https://www.reddit.com/r/slatestarcodex/comments/1se08bz/sam_altman_may_control_our_futurecan_he_be_trusted/</description>
+      <category>slatestarcodex</category>
+    </item>
+    <item>
+      <title>Wanting to get into AI agent dev but completely lost - where do you even start in 2026?</title>
+      <link>https://www.reddit.com/r/AI_Agents/comments/1sdz1u4/wanting_to_get_into_ai_agent_dev_but_completely/</link>
+      <guid isPermaLink="false">1sdz1u4</guid>
+      <pubDate>Mon, 06 Apr 2026 13:35:08 GMT</pubDate>
+      <description>↑72  💬45  r/AI_Agents
+
+Problem is I have zero clue where to start. Every time I Google it I get 10 different answers - some say start with n8n, some say LangGraph, some say just use raw API calls, some say CrewAI, AutoGen... it's overwhelming.
+
+
+
+A few honest questions:
+
+\- Should I start with a no-code/low-code tool like n8n to understand the concepts, then move to code-first frameworks?
+
+\- Or is n8n just a detour and I should go straight to LangGraph / LlamaIndex?
+
+\- Is LangGraph overkill for a beginner or is it the right place to invest time?
+
+\- What's the actual skill progression that made you good at this?
+
+
+
+I don't mind putting in the work - I just don't want to spend 3 months on the wrong thing. If you've gone from zero to building real agentic systems, I'd love to hear your actual path.
+
+
+
+Thanks in advance 🙏
+
+https://www.reddit.com/r/AI_Agents/comments/1sdz1u4/wanting_to_get_into_ai_agent_dev_but_completely/</description>
+      <category>AI_Agents</category>
+    </item>
+    <item>
+      <title>Sydney rich-lister’s company a suspected front for bikies</title>
+      <link>https://www.reddit.com/r/auslaw/comments/1sdxft2/sydney_richlisters_company_a_suspected_front_for/</link>
+      <guid isPermaLink="false">1sdxft2</guid>
+      <pubDate>Mon, 06 Apr 2026 12:27:13 GMT</pubDate>
+      <description>↑47  💬15  r/auslaw
+
+&amp;gt;*The police who pulled his car over kept his phone, which he had given them to show his digital driver’s licence. “You’ll hear from my lawyer, bro,” he said.*
+
+&amp;gt;*His lawyers asked police not to extract any data from the device and applied to the court for its urgent return, arguing that the phone was vital to the business as it was used as a two-factor authenticator to process transactions.*
+
+I thought I'd heard it all when it comes to excuses for getting your phone back from police. This is a new one.
+
+https://www.reddit.com/r/auslaw/comments/1sdxft2/sydney_richlisters_company_a_suspected_front_for/</description>
+      <category>auslaw</category>
+    </item>
+    <item>
+      <title>I built 6 iOS apps in 3 months using Claude Code and they’re already making money</title>
+      <link>https://www.reddit.com/r/ClaudeAI/comments/1sdw589/i_built_6_ios_apps_in_3_months_using_claude_code/</link>
+      <guid isPermaLink="false">1sdw589</guid>
+      <pubDate>Mon, 06 Apr 2026 11:26:26 GMT</pubDate>
+      <description>↑391  💬82  r/ClaudeAI
+
+A couple of months ago, I decided to stop overthinking ideas and just start shipping.
+
+No perfection. No endless polishing. Just simple and useful apps.
+
+I set myself a small challenge to build and publish consistently no matter what.
+
+In the last 3 months, I ended up launching 6 iOS apps on the App Store. Most of them are simple utility apps. Nothing groundbreaking, but built to solve small real problems.
+
+I used Claude Code to speed up development, which helped me go from idea to prototype to published much faster than usual.
+
+The surprising part is that people are actually using them daily. And even better, they have started generating money.
+
+It is not life changing income yet, but seeing real users and real revenue from something I built in a short time is honestly motivating. The biggest lesson for me was simple. Shipping is better than perfecting.
+
+You learn much more by putting things out there than by sitting on perfect ideas.
+
+Now I am continuing the same approach. Build small. Launch fast. Learn. Repeat.
+
+If you are thinking about building apps for passive income, just start. Your first version does not need to be perfect.
+
+Happy to share more details if anyone is interested.
+
+[https://apps.apple.com/gb/developer/digital-hole-pvt-ltd/id917701060](https://apps.apple.com/gb/developer/digital-hole-pvt-ltd/id917701060)
+
+https://www.reddit.com/r/ClaudeAI/comments/1sdw589/i_built_6_ios_apps_in_3_months_using_claude_code/</description>
+      <category>ClaudeAI</category>
+    </item>
+    <item>
+      <title>Ambient “manager” with Claude Haiku — one unsolicited line, rich context, no chat UI</title>
+      <link>https://www.reddit.com/r/ClaudeAI/comments/1sdro16/ambient_manager_with_claude_haiku_one_unsolicited/</link>
+      <guid isPermaLink="false">1sdro16</guid>
+      <pubDate>Mon, 06 Apr 2026 07:04:34 GMT</pubDate>
+      <description>↑213  💬35  r/ClaudeAI
+
+I built a minimal ambient AI pattern for my home desk setup: don’t open a chat — still get one short, timely line based on real context.
+
+
+
+What feeds the model (high level): Notion task state + estimates, calendar, biometrics/wellness signals, desk presence / away-ish cues from my home stack, plus schedule timing. The UI is a Pi + touchscreen bar display running a dashboard; the “agent” is mostly one line of text at the bottom, not a conversation thread.
+
+
+
+Why Haiku: I want this to fire often without feeling heavy — fast/cheap enough to be “always there,” more like a status strip than an assistant window.
+
+
+
+Examples I actually get:
+
+
+
+On task start: a tiny pre-flight habit nudge (e.g., drink water first).
+
+On task completion with slack before the next meeting: a gentle “you have time — maybe a walk.”
+
+Late night: a firm boundary push (“ship it to tomorrow; protect sleep”).
+
+As a freelancer, the surprising outcome wasn’t “smarter text” — it was social texture: something that behaves a bit like a good manager — aware of context, not omniscient, not chatty.
+
+
+
+Tech-wise: Claude Haiku for generation, Node services behind the scenes, Notion as task source of truth, plus sensors/integrations for context. Happy to go deeper on architecture / pitfalls (latency, safety, “don’t nag”) if people are building something similar.
+
+https://www.reddit.com/r/ClaudeAI/comments/1sdro16/ambient_manager_with_claude_haiku_one_unsolicited/</description>
+      <category>ClaudeAI</category>
+    </item>
+    <item>
+      <title>Grief and narcolepsy</title>
+      <link>https://www.reddit.com/r/Narcolepsy/comments/1sdg8w5/grief_and_narcolepsy/</link>
+      <guid isPermaLink="false">1sdg8w5</guid>
+      <pubDate>Sun, 05 Apr 2026 21:52:51 GMT</pubDate>
+      <description>↑20  💬12  r/Narcolepsy
+
+I lost my father in November. It was an extremely difficult and traumatic period of my life. I’ve been taking Xywav for 2 years now and do pretty well on it. I’m also on Wakix.
+
+In the weeks after his passing my sleep was surprisingly OK. At least, I was functional throughout the day/able to stay awake and complete tasks. 
+
+A few months later, I’ve slumped into a deep depression about his death. Now it’s almost as if I’m unmedicated, sleeping 12+ hours per night, insane dreams, napping during the day, just exhausted and incapable of doing things I was just a few weeks ago. I tried adding in sunosi again but it just made me feel worse. 
+
+Has anyone else gone through this, and can you tell me about your experience?
+
+https://www.reddit.com/r/Narcolepsy/comments/1sdg8w5/grief_and_narcolepsy/</description>
       <category>Narcolepsy</category>
     </item>
     <item>
-      <title>A narcolepsy diagnosis is like going through the stages of grief.</title>
-      <link>https://www.reddit.com/r/Narcolepsy/comments/1s2vd4o/a_narcolepsy_diagnosis_is_like_going_through_the/</link>
-      <guid isPermaLink="false">1s2vd4o</guid>
-      <pubDate>Wed, 25 Mar 2026 00:15:29 GMT</pubDate>
-      <description>↑74  💬23  r/Narcolepsy
+      <title>AI agents are now taking actions across our systems, who's liable when an agent makes a mistake?</title>
+      <link>https://www.reddit.com/r/auslaw/comments/1s5xsfn/ai_agents_are_now_taking_actions_across_our/</link>
+      <guid isPermaLink="false">1s5xsfn</guid>
+      <pubDate>Sat, 28 Mar 2026 11:24:52 GMT</pubDate>
+      <description>↑22  💬18  r/auslaw
 
-I feel like when diagnosed with Narcolepsy, you go through the stages of grief. 
+I'm in IT/compliance at a financial services firm. We're deploying AI agents that can take actions, update records, send communications, and even initiate approvals. The efficiency upside is huge. But we hit a wall in our legal review: when an agent makes a mistake, who's accountable? Our traditional IAM model assumed human users with sessions and permissions. Agents act continuously, across multiple systems, with limited oversight. Our legal team is asking questions we can't answer: Did the agent have authority for that action? Which human approved this transaction? Can we prove what happened after the fact? For others who've deployed agentic AI in regulated environments: how did you structure accountability? How do you audit agent decisions?
 
-It felt relieving at first, to know I wasn’t just “lazy” and there was a genuine medical reason for my symptoms. All the sleepiness, the muscle weakness, the inability to stay awake, the hallucinations—it all boiled down to having Narcolepsy. But, then I realized this is for the rest of my life, and I felt defeated. I accepted it after a while, knowing there are medications out there that can help me live a normal life. 
-
-But, I keep going back to that defeated feeling, also understanding that *without* the medication, I’ll go back to how I was before taking it, and I hate that thought. I hate that I am forever on medicine just to function—to be capable of driving, capable of working, capable of having a life on the weekends. But, then again, I also feel eternally grateful for the medications, because I do get to do all of the things I want because of them. I just wish I didn’t *need* them in order to have those things. 
-
-All of these back and forth feelings make me feel like I’m on a hellacious rollercoaster I can’t get off of. I’m so exhausted mentally and emotionally, and I wish I could just accept my diagnosis and not go through these motions anymore.
-
-https://www.reddit.com/r/Narcolepsy/comments/1s2vd4o/a_narcolepsy_diagnosis_is_like_going_through_the/</description>
-      <category>Narcolepsy</category>
-    </item>
-    <item>
-      <title>MSLT Ended Early, Was Not Told Anything From Technician Besides “You Are A Sleepy Dude.”</title>
-      <link>https://www.reddit.com/r/Narcolepsy/comments/1s2clhu/mslt_ended_early_was_not_told_anything_from/</link>
-      <guid isPermaLink="false">1s2clhu</guid>
-      <pubDate>Tue, 24 Mar 2026 12:39:03 GMT</pubDate>
-      <description>↑36  💬29  r/Narcolepsy
-
-I (30M) had a full sleepy study from Sunday 03/22/2026-03/23/2026. I did an overnight sleep study, woke up, and then did the MSLT. I was suppose to have 5 naps. After nap 4, they came in and said they “have all the data we need”. I did fall asleep for all 4 naps. I asked the technician if I had a sleep disorder. Technician said “I can’t tell you anything until you have your review appointment and I normally don’t say anything as people put words into my mouth, but what I can say is you are a very sleepy dude.” She then asked how far my drive was home, and if I was going to be okay to drive home. I thought that was weird, I don’t take any medications and I drove to the place. Could this be indicative of a problem, like narcolepsy/ sleep disorder? I have an appointment to discuss the results in April.
-
-I am always absolutely exhausted by noon despite sleeping well. I don’t remember most of my dreams, I do have like random arm and leg twitches while I’m sleeping, and I fall asleep really fast. I sometimes have sleep paralysis but it’s not often.
-
-\*\*Update
-
-Thank you everyone for the comments! I haven’t heard from my doctor but I saw the test results that they uploaded online to my patient portal. All Naps - Mean Sleep Latency: 4.4 minutes no REM reached. PSG was normal with 7.23 hours of sleep, sleep efficiency 97% during the overnight PSG, and I fell asleep within 2 minutes during the overnight PSG. No idea what this means going forward, but I’m just tired it seems.
-
-https://www.reddit.com/r/Narcolepsy/comments/1s2clhu/mslt_ended_early_was_not_told_anything_from/</description>
-      <category>Narcolepsy</category>
-    </item>
-    <item>
-      <title>They took my diagnosis away</title>
-      <link>https://www.reddit.com/r/Narcolepsy/comments/1s1mr1u/they_took_my_diagnosis_away/</link>
-      <guid isPermaLink="false">1s1mr1u</guid>
-      <pubDate>Mon, 23 Mar 2026 17:05:06 GMT</pubDate>
-      <description>↑60  💬31  r/Narcolepsy
-
-Hello, I’m new here. I read the pinned posts and many posts on here but I feel hopeless so I’m still asking, I’m sorry if that’s not the right place. 
-
-I’ve been diagnosed with narcolepsy a few months ago but they didn’t know which type. My profile seemed atypical because my sleep latency was 12min (I’m in my 20s) but I had 4 SOREMPs on the 5 naps (I slept during all of them) and 2 SOREMPs on the 3 nights I spent in the clinic. I also took a 5 hours long nap on day 3 and had 45% of REM and 45% of light sleep. Because of this my doctor suspected N1, even though I can’t tell for sure if I have or not cataplexies. He sent me to the national center (I’m French), which is the only one allowed to do spinal tap. The center performed the tests again last week but I couldn’t sleep at all during the MSLT because my cardiac rythm was too high. During the nights I woke up a lot including with a start because of auditive hallucinations and had many vivid dreams about the nurses which I couldn’t tell if they were real or not but they said my sleep quality at nights was great. So they told me everything’s fine and I don’t have narcolepsy nor any other sleep disorder. Still, after the MSLT, they decided to do the spinal tap even though I don’t have the HLA gene. The results can take up to 3 months and in the meantime I’m not allowed to be medicated and I’m considered not ill. I have a lot of symptoms, up to 4 sleep attacks everything day but can resist them and the worst are sleep paralysis, hypnagogic hallucinations and terrible sleep in general. I’m exhausted all the time and getting out of bed is a permanent battle. I feel like shit since they told me I was perfectly fine, I’m thinking maybe I’m the crazy one. Does anyone have a similar profile/experience ?
-
-https://www.reddit.com/r/Narcolepsy/comments/1s1mr1u/they_took_my_diagnosis_away/</description>
-      <category>Narcolepsy</category>
-    </item>
-    <item>
-      <title>Anybody else have a photo album collection on your phone of pictures from friends photo “sniping” you drifting off/napping?</title>
-      <link>https://www.reddit.com/r/Narcolepsy/comments/1s1akve/anybody_else_have_a_photo_album_collection_on/</link>
-      <guid isPermaLink="false">1s1akve</guid>
-      <pubDate>Mon, 23 Mar 2026 07:50:08 GMT</pubDate>
-      <description>↑45  💬30  r/Narcolepsy
-
-I hope other people do this too lol
-
-https://www.reddit.com/r/Narcolepsy/comments/1s1akve/anybody_else_have_a_photo_album_collection_on/</description>
-      <category>Narcolepsy</category>
-    </item>
-    <item>
-      <title>How to help</title>
-      <link>https://www.reddit.com/r/Narcolepsy/comments/1s13uog/how_to_help/</link>
-      <guid isPermaLink="false">1s13uog</guid>
-      <pubDate>Mon, 23 Mar 2026 01:43:35 GMT</pubDate>
-      <description>↑24  💬20  r/Narcolepsy
-
-Hey y’all, my girlfriend has Narcolepsy with Cataplexy and I want to do everything in my power to help. I know I can’t fix the problem as it seems unfixable at this current moment but I’d like to know from other people that have narcolepsy what helps them feel better whether from themselves or from their partner / people around them. I already do the regular stuff, catching her head when she loses control of her body, calling her to wake her up at her request, letting her nap, ample water, medication reminders, and obviously listening and adapting to make things easier for her. I love this girl so much and anything that y’all think works I would love to hear. Thank you for reading!
-
-Edit: I wanted to thank yall for responding and being so kind and sweet. I will take everyone’s comments and feedback into account and try my best. I also forgot to clarify that catching her head was apart of her cataplexy due to laughter, she isn’t just falling out of nowhere. Thank you all so much. ILY
-
-https://www.reddit.com/r/Narcolepsy/comments/1s13uog/how_to_help/</description>
-      <category>Narcolepsy</category>
-    </item>
-    <item>
-      <title>I just wanted a quick nap :(</title>
-      <link>https://www.reddit.com/r/Narcolepsy/comments/1s118mu/i_just_wanted_a_quick_nap/</link>
-      <guid isPermaLink="false">1s118mu</guid>
-      <pubDate>Sun, 22 Mar 2026 23:47:16 GMT</pubDate>
-      <description>↑174  💬15  r/Narcolepsy
-
-I’m Pip and I make silly comics about living with narcolepsy. This is a constant struggle
-
-https://www.reddit.com/r/Narcolepsy/comments/1s118mu/i_just_wanted_a_quick_nap/</description>
-      <category>Narcolepsy</category>
+https://www.reddit.com/r/auslaw/comments/1s5xsfn/ai_agents_are_now_taking_actions_across_our/</description>
+      <category>auslaw</category>
     </item>
   </channel>
 </rss>
