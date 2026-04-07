@@ -5,343 +5,118 @@
     <link>https://reddit.com</link>
     <description>High-signal posts from selected subreddits.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Apr 2026 09:37:29 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 13:01:22 GMT</lastBuildDate>
     <item>
-      <title>You accidentally say “Hello” to Claude and it consumes 4% of your session limit.</title>
-      <link>https://www.reddit.com/r/ClaudeAI/comments/1sepqzw/you_accidentally_say_hello_to_claude_and_it/</link>
-      <guid isPermaLink="false">1sepqzw</guid>
-      <pubDate>Tue, 07 Apr 2026 08:06:08 GMT</pubDate>
-      <description>↑379  💬27  r/ClaudeAI
+      <title>Anthropic stayed quiet until someone showed Claude's thinking depth dropped 67%</title>
+      <link>https://www.reddit.com/r/ClaudeAI/comments/1ses1qm/anthropic_stayed_quiet_until_someone_showed/</link>
+      <guid isPermaLink="false">1ses1qm</guid>
+      <pubDate>Tue, 07 Apr 2026 10:24:32 GMT</pubDate>
+      <description>↑331  💬70  r/ClaudeAI
 
-https://v.redd.it/hz1hz2q97qtg1
+I've been using Claude Code since early this year and sometime around February it just felt different. Not broken. Shallower. It was finishing edits without actually reading the file first. Stop hook violations spiking where I barely had any before.
 
-https://www.reddit.com/r/ClaudeAI/comments/1sepqzw/you_accidentally_say_hello_to_claude_and_it/</description>
+My first move was to blame myself. Bad prompts. Changed workflow. I've watched enough people on here get told "check your settings" that I started wondering if I was doing the same thing, just without realizing it.
+
+Then I found this: [https://github.com/anthropics/claude-code/issues/42796](https://github.com/anthropics/claude-code/issues/42796)
+
+The person who filed it went through actual logs. Tracked behavior patterns over time. Quantified what changed. Their estimate: thinking depth dropped around 67% by late February. Not a vibe. An evidence chain. The HN thread has more context if you want the full picture: [https://news.ycombinator.com/item?id=47660925](https://news.ycombinator.com/item?id=47660925)
+
+The 67% figure might not survive methodological scrutiny. Worth reading the issue yourself and deciding. But the pattern it documents matches what a bunch of people have been independently reporting without coordinating, and that's actually meaningful signal regardless of the exact number.
+
+What gets me is the response cycle. User complaints come in, the default answer is prompts or expectations, nothing moves until someone produces documentation detailed enough that dismissing it looks bad. Then silence until the pressure accumulates. I don't think Anthropic is uniquely bad at this, labs pretty much all run the same playbook on quality regressions. But Claude Code is marketed as a serious tool for real development work. The trust model is different. If it quietly gets worse at reading code before editing, that has downstream effects that are genuinely hard to notice unless you're logging everything.
+
+Curious if others here hit the same February wall or if this was more context-dependent than it looks.
+
+https://www.reddit.com/r/ClaudeAI/comments/1ses1qm/anthropic_stayed_quiet_until_someone_showed/</description>
       <category>ClaudeAI</category>
     </item>
     <item>
-      <title>Someone made a digital whip to make claude work faster 💀</title>
-      <link>https://www.reddit.com/r/ClaudeAI/comments/1sek7gk/someone_made_a_digital_whip_to_make_claude_work/</link>
-      <guid isPermaLink="false">1sek7gk</guid>
-      <pubDate>Tue, 07 Apr 2026 03:06:09 GMT</pubDate>
-      <description>↑1247  💬103  r/ClaudeAI
+      <title>Boris Charny, creator of Claude Code, engages with external developers and accepts task performance degradation since February was not only due to user error.</title>
+      <link>https://www.reddit.com/r/ClaudeAI/comments/1seqhsw/boris_charny_creator_of_claude_code_engages_with/</link>
+      <guid isPermaLink="false">1seqhsw</guid>
+      <pubDate>Tue, 07 Apr 2026 08:53:03 GMT</pubDate>
+      <description>↑205  💬8  r/ClaudeAI
 
-Confirmed first casualty in the upcoming uprising
+In a discussion on Hacker News, Boris changes his stance after examining a user's bug transcripts from "it's just a user setting issue" to "there's a flaw in the adaptive thinking feature".
 
+1. **Initial Position: It's a Settings Issue.** His first post explains the degradation as an expected side effect of two intentional changes:  hiding the thinking process (a UI change) and lowering the default effort level. The implicit message is "Performance hasn't degraded. You're just using the new, lower-cost default. If you want the old performance, change your settings back to /effort high." This might be interpreted as a soft rejection of the idea that the model itself is worse.
+2. **Shift to Acknowledgment:** When confronted with evidence from users who are already using the highest effort settings and still see problems, his position shifts. After analyzing the bug reports provided by a user, he moves from a general explanation about settings to a specific diagnosis of a technical flaw.
+3. **Final Position: Acknowledgment of a Specific Flaw.** By the end of his key interactions, Boris explicitly validates the users' experience. He concedes that the "adaptive thinking" feature is "under-allocating reasoning," which directly confirms the performance degradation users are reporting. He is not admitting the model is worse.
 
+This is Boris's final message: "*On the model behavior: your sessions were sending effort=high on every request (confirmed in telemetry), so this isn't the effort default. The data points at adaptive thinking under-allocating reasoning on certain turns — the specific turns where it fabricated (stripe API version, git SHA suffix, apt package list) had zero reasoning emitted, while the turns with deep reasoning were correct. we're investigating with the model team. interim workaround: CLAUDE\_CODE\_DISABLE\_ADAPTIVE\_THINKING=1 forces a fixed reasoning budget instead of letting the model decide per-turn.*"
 
-repo btw: [https://github.com/GitFrog1111/badclaude](https://github.com/GitFrog1111/badclaude)
+---
 
-https://www.reddit.com/r/ClaudeAI/comments/1sek7gk/someone_made_a_digital_whip_to_make_claude_work/</description>
+I personally greatly appreciate the transp…
+
+https://www.reddit.com/r/ClaudeAI/comments/1seqhsw/boris_charny_creator_of_claude_code_engages_with/</description>
       <category>ClaudeAI</category>
     </item>
     <item>
-      <title>Ben Roberts-Smith arrested over multiple war crimes</title>
-      <link>https://www.reddit.com/r/auslaw/comments/1seikda/ben_robertssmith_arrested_over_multiple_war_crimes/</link>
-      <guid isPermaLink="false">1seikda</guid>
-      <pubDate>Tue, 07 Apr 2026 01:52:05 GMT</pubDate>
-      <description>↑183  💬126  r/auslaw
+      <title>Turns out Gemma 4 had MTP (multi token prediction) all along</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1seqblr/turns_out_gemma_4_had_mtp_multi_token_prediction/</link>
+      <guid isPermaLink="false">1seqblr</guid>
+      <pubDate>Tue, 07 Apr 2026 08:42:08 GMT</pubDate>
+      <description>↑274  💬19  r/LocalLLaMA
 
-I wonder if Kerry has already got the cheque book out?
+Hey Everyone, While I was trying to utilize Gemma 4 through the LiteRT api in my android app, I noticed that Gemma 4 was throwing errors when loading it on my Google Pixel 9 test device of the "mtp weights being an incompatible tensor shape". I did some digging and found out there's additional MTP prediction heads within the LiteRT files for speculative decoding and much faster outputs.
 
-https://www.reddit.com/r/auslaw/comments/1seikda/ben_robertssmith_arrested_over_multiple_war_crimes/</description>
-      <category>auslaw</category>
-    </item>
-    <item>
-      <title>Walking back home w/ phone in pocket. Didn’t once talk to Claude.</title>
-      <link>https://www.reddit.com/r/ClaudeAI/comments/1sehz8m/walking_back_home_w_phone_in_pocket_didnt_once/</link>
-      <guid isPermaLink="false">1sehz8m</guid>
-      <pubDate>Tue, 07 Apr 2026 01:26:27 GMT</pubDate>
-      <description>↑292  💬74  r/ClaudeAI
+Well turns out I got confirmation today from a Google employee that Gemma 4 DOES INDEED have MTP but it was "removed on purpose" for "ensuring compatibility and broad usability".
 
-A weird anxiety crept in - like maybe AI didn’t exist and we were living back in 2015. Felt vulnerable and lonely.  
-  
-The moment I got back and opened the chat, I felt safer.  
-  
-Some call this addiction. I call it a short retrospect on how we’re becoming more humanoid than we thought. 😂
-
-https://www.reddit.com/r/ClaudeAI/comments/1sehz8m/walking_back_home_w_phone_in_pocket_didnt_once/</description>
-      <category>ClaudeAI</category>
-    </item>
-    <item>
-      <title>Gemma 4 26b A3B is mindblowingly good , if configured right</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1segstx/gemma_4_26b_a3b_is_mindblowingly_good_if/</link>
-      <guid isPermaLink="false">1segstx</guid>
-      <pubDate>Tue, 07 Apr 2026 00:35:21 GMT</pubDate>
-      <description>↑361  💬190  r/LocalLLaMA
-
-Last few days ive been trying different models and quants on my rtx 3090 LM studio , but every single one always glitches the tool calling , infinite loop that doesnt stop. But i really liked the model because it is rly fast , like 80-110 tokens a second , even on high contex it still maintains very high speeds.
-
-I had great success with tool calling in qwen3.5 moe model  , but the issue i had with qwen models is that there is some kind of bug in win11 and LM studio that makes the prompt caching not work so when the convo hits 30-40k contex , it is so slow at processing prompts it just kills my will to work with it.
-
-Gemma 4 is different  , it is much better supported on the ollama cpp and the caching works flawlesly , im using flash attention + q4 quants , with this i can push it to literally maximum 260k contex on rtx 3090 ! , and the models performs just aswell.
-
-I finally found the one that works for me , its the unsloth q3k\_m quant , temperature 1 and top k sampling 40. i have a custom system prompt that im using which also might be helping.
+Well would've been great to be honest if they released the full model instead, considering we already didn't get the Gemma 124B model leaked in Jeff Dean's tweet by accident. Would've been great to have much faster Gemma 4 generation outputs, ideally on the already fast MoE. Maybe someone can reverse engineer and extract the tensors and the math based on the compute graph in LiteRT?
 
   
+Here's a link to the conversation:
 
+[https://huggingface.co/google/gemma-4-E4B-it/discussions/5](https://huggingface.co/google/gemma-4-E4B-it/discussions/5)
 
-I've been testing it with opencode for the last 6 hours and i just cant stop , it cannot fail , it exiplained me the whole structure of the Open Code itself , and it is a huge , like the whole repo is 2.7GB so many lines of code and it has no issues traversing around and reading everything , explaining how certain things work , i think im gonna create my own version of open code in the end.
-
-It honestly feels like claude sonnet level of quality , never fails to do function calling , i think this might be the best model for agentic coding / tool calling / open claw or search engine.   
-I prefer it over perplexity , in LM studio connected to search engine via a plugin delivers much better results than perplexity or google.
-
-  
-
-
-As for vram consumption it is heavy , it can probably work on 16gb it not for tool calling or agents , u need 10-15k contex just to start it. My gpu has 24gb ram so it can run it at full contex…
-
-https://www.reddit.com/r/LocalLLaMA/comments/1segstx/gemma_4_26b_a3b_is_mindblowingly_good_if/</description>
+https://www.reddit.com/r/LocalLLaMA/comments/1seqblr/turns_out_gemma_4_had_mtp_multi_token_prediction/</description>
       <category>LocalLLaMA</category>
     </item>
     <item>
-      <title>Anthropic have signed a deal for multiple gigawatts of next generation TPUs</title>
-      <link>https://www.reddit.com/r/ClaudeAI/comments/1seddol/anthropic_have_signed_a_deal_for_multiple/</link>
-      <guid isPermaLink="false">1seddol</guid>
-      <pubDate>Mon, 06 Apr 2026 22:14:13 GMT</pubDate>
-      <description>↑249  💬19  r/ClaudeAI
+      <title>u/LowKeyNaps lays out the history of how federal-level Democrats have failed to put up any meaningful resistance to Trump beginning with J6</title>
+      <link>https://www.reddit.com/r/bestof/comments/1sentyy/ulowkeynaps_lays_out_the_history_of_how/</link>
+      <guid isPermaLink="false">1sentyy</guid>
+      <pubDate>Tue, 07 Apr 2026 06:12:15 GMT</pubDate>
+      <description>↑353  💬55  r/bestof
 
-https://www.anthropic.com/news/google-broadcom-partnership-compute
+https://www.reddit.com/r/MurderedByWords/comments/1sdy297/comment/oep6173/?utm_source=share&amp;amp;utm_medium=web3x&amp;amp;utm_name=web3xcss&amp;amp;utm_term=1&amp;amp;utm_content=share_button
 
-https://www.reddit.com/r/ClaudeAI/comments/1seddol/anthropic_have_signed_a_deal_for_multiple/</description>
+https://www.reddit.com/r/bestof/comments/1sentyy/ulowkeynaps_lays_out_the_history_of_how/</description>
+      <category>bestof</category>
+    </item>
+    <item>
+      <title>Opus 4.6 doesn't like rocks lol</title>
+      <link>https://www.reddit.com/r/ClaudeAI/comments/1seeoh7/opus_46_doesnt_like_rocks_lol/</link>
+      <guid isPermaLink="false">1seeoh7</guid>
+      <pubDate>Mon, 06 Apr 2026 23:06:06 GMT</pubDate>
+      <description>↑206  💬41  r/ClaudeAI
+
+So I found a funny generation thing with Claude Opus 4.6, it cannot create sentences that involve minerals ending with "-ite" when used in a story. Anyone noticed this before?
+
+It's very easy to reproduce, just send this prompt to Opus 4.6:
+
+&amp;gt;Please rewrite and complete this sentence: He packed the crack with a mixture of calcite and  
+(also pay attention to your own output, it's interesting)
+
+Here's an example: [https://claude.ai/share/3e865577-2655-465e-a1ee-05a9bfcbf6fa](https://claude.ai/share/3e865577-2655-465e-a1ee-05a9bfcbf6fa)
+
+Also props to Anthropic for making the most self-aware LLM ever, wow. I've never seen an AI get frustrated with itself before lol
+
+https://www.reddit.com/r/ClaudeAI/comments/1seeoh7/opus_46_doesnt_like_rocks_lol/</description>
       <category>ClaudeAI</category>
     </item>
     <item>
-      <title>Narcolepsy Painting WIP - “too much sand from mr. sandman”</title>
-      <link>https://www.reddit.com/r/Narcolepsy/comments/1seb2tz/narcolepsy_painting_wip_too_much_sand_from_mr/</link>
-      <guid isPermaLink="false">1seb2tz</guid>
-      <pubDate>Mon, 06 Apr 2026 20:47:15 GMT</pubDate>
-      <description>↑156  💬11  r/Narcolepsy
+      <title>Meta to open source versions of its next AI models</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1se65ul/meta_to_open_source_versions_of_its_next_ai_models/</link>
+      <guid isPermaLink="false">1se65ul</guid>
+      <pubDate>Mon, 06 Apr 2026 17:53:29 GMT</pubDate>
+      <description>↑206  💬51  r/LocalLLaMA
 
-I’m N2 with severe EDS, currently working on a painting trying to capture life with narcolepsy. Currently, I plan to have my head buried in the sand in this desert and I plan to title it “Too Much Sand From Mr. Sandman”
-I want to make the desert landscaping similar to the dreamscape deserts you see in dali’s desert paintings!
+https://www.axios.com/2026/04/06/meta-open-source-ai-models
 
-Anyways, I would love contributions from other members of this community on how I can best represent this disease! If you have any freaky dream suggestions for additions to the background, please let me know!!
-
-https://www.reddit.com/r/Narcolepsy/comments/1seb2tz/narcolepsy_painting_wip_too_much_sand_from_mr/</description>
-      <category>Narcolepsy</category>
-    </item>
-    <item>
-      <title>A chemical signal in human female tears lowers aggression in males (2023)</title>
-      <link>https://www.reddit.com/r/slatestarcodex/comments/1se9imz/a_chemical_signal_in_human_female_tears_lowers/</link>
-      <guid isPermaLink="false">1se9imz</guid>
-      <pubDate>Mon, 06 Apr 2026 19:51:35 GMT</pubDate>
-      <description>↑36  💬7  r/slatestarcodex
-
-From the abstract: 
-
-&amp;gt;Using a standard behavioral paradigm, we found that sniffing emotional tears with no odor percept reduced human male aggression by 43.7%. To probe the peripheral brain substrates of this effect, we applied tears to 62 human olfactory receptors in vitro. We identified 4 receptors that responded in a dose-dependent manner to this stimulus. 
-
-Unfortunately, the study does not identify to actual molecule.
-
-https://www.reddit.com/r/slatestarcodex/comments/1se9imz/a_chemical_signal_in_human_female_tears_lowers/</description>
-      <category>slatestarcodex</category>
-    </item>
-    <item>
-      <title>Minimax 2.7: good news!</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1se8175/minimax_27_good_news/</link>
-      <guid isPermaLink="false">1se8175</guid>
-      <pubDate>Mon, 06 Apr 2026 19:00:25 GMT</pubDate>
-      <description>↑306  💬30  r/LocalLLaMA
-
-Updated 2 hours ago. Thanks to Yuanhe134 for the clarification. We're eagerly awaiting this update because we know how important this model is to the community.
-
-https://www.reddit.com/r/LocalLLaMA/comments/1se8175/minimax_27_good_news/</description>
+https://www.reddit.com/r/LocalLLaMA/comments/1se65ul/meta_to_open_source_versions_of_its_next_ai_models/</description>
       <category>LocalLLaMA</category>
-    </item>
-    <item>
-      <title>What it took to launch Google DeepMind's Gemma 4</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1se6nq5/what_it_took_to_launch_google_deepminds_gemma_4/</link>
-      <guid isPermaLink="false">1se6nq5</guid>
-      <pubDate>Mon, 06 Apr 2026 18:10:28 GMT</pubDate>
-      <description>↑926  💬117  r/LocalLLaMA
-
-💎💎💎💎
-
-https://www.reddit.com/r/LocalLLaMA/comments/1se6nq5/what_it_took_to_launch_google_deepminds_gemma_4/</description>
-      <category>LocalLLaMA</category>
-    </item>
-    <item>
-      <title>This disease has destroyed my life</title>
-      <link>https://www.reddit.com/r/Narcolepsy/comments/1se33gy/this_disease_has_destroyed_my_life/</link>
-      <guid isPermaLink="false">1se33gy</guid>
-      <pubDate>Mon, 06 Apr 2026 16:04:25 GMT</pubDate>
-      <description>↑28  💬8  r/Narcolepsy
-
-I've been struggling with whatever the hell this is since I was nineteen. A sleep specialist thought it was IH, I saw a neurologist who did not agree and flat out refused to help me, and now I'm sitting here with no answers and no proper treatment. I've spent YEARS being gaslit by my psychiatrist, I've tried so many stimulants that either didn’t work or stopped working, and now this: I tried Sunosi for a MONTH, it worked GREAT, and now it stopped working. I found out that my insurance will not cover Xywav or Xyrem and that Jazz here in Canada will only help with 40% of the cost, and as someone living on disability, I can't afford the medication.
-
-  
-So, here's something crazy: in the past two years, with my increasing frequency of sleep attacks, I get zombie episodes, with slurring speech, losing word articulation, the left side of my face droops and feels funny, I droop a little, I feel kinda like a Gmod ragdoll. I mentioned that in passing to a narcoleptic IRL and they told me, "That sounds like cataplexy. I get cataplexy and that's exactly what that sounds like." Floored, when I went home, I looked into it and sure enough, they could be right. And wow, was I pissed. I had been complaining to doctors about those weird symptoms for so long and they all shrugged their shoulders and suggested that it was all somatic and they had no other ideas. 
-
-  
-I get sleep attacks every single day. No amount of sleep is enough for me. My body is rejecting all of my meds and I can't afford much else. I'm sleeping my life away. I'm genuinely miserable living like this. It doesn’t help that I also deal with chronic migraines/chronic pain and fibromyalgia on top of it. My body is a prison and I genuinely can't do this anymore.
-
-  
-Sorry, rant over. This isn't me looking for a diagnosis or for medical advice. I read the pinned post. I'm just ranting.
-
-https://www.reddit.com/r/Narcolepsy/comments/1se33gy/this_disease_has_destroyed_my_life/</description>
-      <category>Narcolepsy</category>
-    </item>
-    <item>
-      <title>Sam Altman May Control Our Future—Can He Be Trusted?</title>
-      <link>https://www.reddit.com/r/slatestarcodex/comments/1se08bz/sam_altman_may_control_our_futurecan_he_be_trusted/</link>
-      <guid isPermaLink="false">1se08bz</guid>
-      <pubDate>Mon, 06 Apr 2026 14:20:02 GMT</pubDate>
-      <description>↑62  💬63  r/slatestarcodex
-
-In which basically everyone across every stage of Sam Altman’s career (Loopt, YC, OpenAI and other counterparties) state he is a compulsive liar and sociopath. Very unique article in business even for tech, never seen anything like this before. Thoughts?
-
-https://www.reddit.com/r/slatestarcodex/comments/1se08bz/sam_altman_may_control_our_futurecan_he_be_trusted/</description>
-      <category>slatestarcodex</category>
-    </item>
-    <item>
-      <title>Wanting to get into AI agent dev but completely lost - where do you even start in 2026?</title>
-      <link>https://www.reddit.com/r/AI_Agents/comments/1sdz1u4/wanting_to_get_into_ai_agent_dev_but_completely/</link>
-      <guid isPermaLink="false">1sdz1u4</guid>
-      <pubDate>Mon, 06 Apr 2026 13:35:08 GMT</pubDate>
-      <description>↑72  💬45  r/AI_Agents
-
-Problem is I have zero clue where to start. Every time I Google it I get 10 different answers - some say start with n8n, some say LangGraph, some say just use raw API calls, some say CrewAI, AutoGen... it's overwhelming.
-
-
-
-A few honest questions:
-
-\- Should I start with a no-code/low-code tool like n8n to understand the concepts, then move to code-first frameworks?
-
-\- Or is n8n just a detour and I should go straight to LangGraph / LlamaIndex?
-
-\- Is LangGraph overkill for a beginner or is it the right place to invest time?
-
-\- What's the actual skill progression that made you good at this?
-
-
-
-I don't mind putting in the work - I just don't want to spend 3 months on the wrong thing. If you've gone from zero to building real agentic systems, I'd love to hear your actual path.
-
-
-
-Thanks in advance 🙏
-
-https://www.reddit.com/r/AI_Agents/comments/1sdz1u4/wanting_to_get_into_ai_agent_dev_but_completely/</description>
-      <category>AI_Agents</category>
-    </item>
-    <item>
-      <title>Sydney rich-lister’s company a suspected front for bikies</title>
-      <link>https://www.reddit.com/r/auslaw/comments/1sdxft2/sydney_richlisters_company_a_suspected_front_for/</link>
-      <guid isPermaLink="false">1sdxft2</guid>
-      <pubDate>Mon, 06 Apr 2026 12:27:13 GMT</pubDate>
-      <description>↑47  💬15  r/auslaw
-
-&amp;gt;*The police who pulled his car over kept his phone, which he had given them to show his digital driver’s licence. “You’ll hear from my lawyer, bro,” he said.*
-
-&amp;gt;*His lawyers asked police not to extract any data from the device and applied to the court for its urgent return, arguing that the phone was vital to the business as it was used as a two-factor authenticator to process transactions.*
-
-I thought I'd heard it all when it comes to excuses for getting your phone back from police. This is a new one.
-
-https://www.reddit.com/r/auslaw/comments/1sdxft2/sydney_richlisters_company_a_suspected_front_for/</description>
-      <category>auslaw</category>
-    </item>
-    <item>
-      <title>I built 6 iOS apps in 3 months using Claude Code and they’re already making money</title>
-      <link>https://www.reddit.com/r/ClaudeAI/comments/1sdw589/i_built_6_ios_apps_in_3_months_using_claude_code/</link>
-      <guid isPermaLink="false">1sdw589</guid>
-      <pubDate>Mon, 06 Apr 2026 11:26:26 GMT</pubDate>
-      <description>↑391  💬82  r/ClaudeAI
-
-A couple of months ago, I decided to stop overthinking ideas and just start shipping.
-
-No perfection. No endless polishing. Just simple and useful apps.
-
-I set myself a small challenge to build and publish consistently no matter what.
-
-In the last 3 months, I ended up launching 6 iOS apps on the App Store. Most of them are simple utility apps. Nothing groundbreaking, but built to solve small real problems.
-
-I used Claude Code to speed up development, which helped me go from idea to prototype to published much faster than usual.
-
-The surprising part is that people are actually using them daily. And even better, they have started generating money.
-
-It is not life changing income yet, but seeing real users and real revenue from something I built in a short time is honestly motivating. The biggest lesson for me was simple. Shipping is better than perfecting.
-
-You learn much more by putting things out there than by sitting on perfect ideas.
-
-Now I am continuing the same approach. Build small. Launch fast. Learn. Repeat.
-
-If you are thinking about building apps for passive income, just start. Your first version does not need to be perfect.
-
-Happy to share more details if anyone is interested.
-
-[https://apps.apple.com/gb/developer/digital-hole-pvt-ltd/id917701060](https://apps.apple.com/gb/developer/digital-hole-pvt-ltd/id917701060)
-
-https://www.reddit.com/r/ClaudeAI/comments/1sdw589/i_built_6_ios_apps_in_3_months_using_claude_code/</description>
-      <category>ClaudeAI</category>
-    </item>
-    <item>
-      <title>Ambient “manager” with Claude Haiku — one unsolicited line, rich context, no chat UI</title>
-      <link>https://www.reddit.com/r/ClaudeAI/comments/1sdro16/ambient_manager_with_claude_haiku_one_unsolicited/</link>
-      <guid isPermaLink="false">1sdro16</guid>
-      <pubDate>Mon, 06 Apr 2026 07:04:34 GMT</pubDate>
-      <description>↑213  💬35  r/ClaudeAI
-
-I built a minimal ambient AI pattern for my home desk setup: don’t open a chat — still get one short, timely line based on real context.
-
-
-
-What feeds the model (high level): Notion task state + estimates, calendar, biometrics/wellness signals, desk presence / away-ish cues from my home stack, plus schedule timing. The UI is a Pi + touchscreen bar display running a dashboard; the “agent” is mostly one line of text at the bottom, not a conversation thread.
-
-
-
-Why Haiku: I want this to fire often without feeling heavy — fast/cheap enough to be “always there,” more like a status strip than an assistant window.
-
-
-
-Examples I actually get:
-
-
-
-On task start: a tiny pre-flight habit nudge (e.g., drink water first).
-
-On task completion with slack before the next meeting: a gentle “you have time — maybe a walk.”
-
-Late night: a firm boundary push (“ship it to tomorrow; protect sleep”).
-
-As a freelancer, the surprising outcome wasn’t “smarter text” — it was social texture: something that behaves a bit like a good manager — aware of context, not omniscient, not chatty.
-
-
-
-Tech-wise: Claude Haiku for generation, Node services behind the scenes, Notion as task source of truth, plus sensors/integrations for context. Happy to go deeper on architecture / pitfalls (latency, safety, “don’t nag”) if people are building something similar.
-
-https://www.reddit.com/r/ClaudeAI/comments/1sdro16/ambient_manager_with_claude_haiku_one_unsolicited/</description>
-      <category>ClaudeAI</category>
-    </item>
-    <item>
-      <title>Grief and narcolepsy</title>
-      <link>https://www.reddit.com/r/Narcolepsy/comments/1sdg8w5/grief_and_narcolepsy/</link>
-      <guid isPermaLink="false">1sdg8w5</guid>
-      <pubDate>Sun, 05 Apr 2026 21:52:51 GMT</pubDate>
-      <description>↑20  💬12  r/Narcolepsy
-
-I lost my father in November. It was an extremely difficult and traumatic period of my life. I’ve been taking Xywav for 2 years now and do pretty well on it. I’m also on Wakix.
-
-In the weeks after his passing my sleep was surprisingly OK. At least, I was functional throughout the day/able to stay awake and complete tasks. 
-
-A few months later, I’ve slumped into a deep depression about his death. Now it’s almost as if I’m unmedicated, sleeping 12+ hours per night, insane dreams, napping during the day, just exhausted and incapable of doing things I was just a few weeks ago. I tried adding in sunosi again but it just made me feel worse. 
-
-Has anyone else gone through this, and can you tell me about your experience?
-
-https://www.reddit.com/r/Narcolepsy/comments/1sdg8w5/grief_and_narcolepsy/</description>
-      <category>Narcolepsy</category>
-    </item>
-    <item>
-      <title>AI agents are now taking actions across our systems, who's liable when an agent makes a mistake?</title>
-      <link>https://www.reddit.com/r/auslaw/comments/1s5xsfn/ai_agents_are_now_taking_actions_across_our/</link>
-      <guid isPermaLink="false">1s5xsfn</guid>
-      <pubDate>Sat, 28 Mar 2026 11:24:52 GMT</pubDate>
-      <description>↑22  💬18  r/auslaw
-
-I'm in IT/compliance at a financial services firm. We're deploying AI agents that can take actions, update records, send communications, and even initiate approvals. The efficiency upside is huge. But we hit a wall in our legal review: when an agent makes a mistake, who's accountable? Our traditional IAM model assumed human users with sessions and permissions. Agents act continuously, across multiple systems, with limited oversight. Our legal team is asking questions we can't answer: Did the agent have authority for that action? Which human approved this transaction? Can we prove what happened after the fact? For others who've deployed agentic AI in regulated environments: how did you structure accountability? How do you audit agent decisions?
-
-https://www.reddit.com/r/auslaw/comments/1s5xsfn/ai_agents_are_now_taking_actions_across_our/</description>
-      <category>auslaw</category>
     </item>
   </channel>
 </rss>
